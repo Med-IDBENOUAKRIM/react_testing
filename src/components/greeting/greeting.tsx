@@ -4,7 +4,7 @@ import { GreetingProps } from '../../types';
 const Greeting: React.FC<GreetingProps> = ({ name }) => {
   return (
     <div>
-      <p>Hello {name}</p>
+      <p>Hello {name ? name : 'Guest'}</p>
     </div>
   );
 };
